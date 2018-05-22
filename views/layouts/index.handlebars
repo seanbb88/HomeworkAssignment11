@@ -1,0 +1,18 @@
+<h1>Type in the sandwich you would like to eat!</h1>
+
+
+<form>
+    <span id="sandwich-item">Sandwich:
+        <input id="input-sandwich" type="text">
+        <input id="add-sandwich" value="Add Item" type="submit">
+        <input type="radio" name="eaten" value="1" checked> Not Eaten!
+        <br>
+        <input type="radio" name="eaten" value="0"> Eaten
+    </span>
+</form>
+
+<h2>Sandwiches: </h2>
+
+<ul>
+    {{#each sandwich}} {{#unless eaten}} {{/unless}} {{/each}}
+</ul>
